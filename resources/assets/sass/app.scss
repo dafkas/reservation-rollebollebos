@@ -1,0 +1,173 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@media (min-width: 1200px){
+  #app{
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+body{
+  padding-top: 10px;
+  background-image: url(http://www.rollebollebos.nl/templates/joomla3_rollebollebosbasetemplate/images/achtergrond.png);
+  .navbar-default {
+    background-color: rgba(244, 166, 160, 0.8);
+    border-color: #d3e0e9;
+    height: 130px;
+    border-radius: 15px;
+    a {
+      color:white!important;
+    }
+    .dropdown-menu{
+      a {
+        color:#333!important;
+      }
+    }
+  }
+  .panel-default{
+    border-color: rgba(250, 243, 160, 0.8);
+    border-radius: 15px;
+    border-width: 12px;
+
+    .panel-body{
+      .btn-sm, .btn-group-sm > .btn {
+        padding: 5px 10px;
+        font-size: 15px;
+        line-height: 1.0;
+        border-radius: 3px;
+      }
+    }
+  }
+.day{
+    border-style: solid;
+    padding-left: 44px;
+    border-width: 1px;
+    padding: 20px;
+    text-align: center;
+    height: 60px;
+    &:hover
+    {
+      background-color: #f5f8fa;
+    }
+
+  }
+  select{
+    height: 30px;
+
+  }
+  .currentday{
+    text-align: center;
+    background-color: #f5f8fa;
+    text-decoration: underline;
+  }
+  .weekday{
+    width:10%;
+    text-align: center;
+    border: solid;
+  }
+  td {
+    padding: 1%;
+    position:relative;
+
+      a {
+        height: 70%;
+        display: block;
+        position: absolute;
+        bottom:0;
+        right:0;
+        left:0;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+  }
+  .blank{
+
+    text-align: center;
+    border: solid;
+    border-width:1px;
+  }
+
+  .month{
+    text-align: center;
+    border:solid 1px;
+    padding:20px;
+
+  }
+  .active{
+    a{
+      white-space: nowrap;
+      text-transform: capitalize;
+    }
+  }
+  .month-tab{
+    background-color: #216a94;
+    
+    a{
+      color: white;
+      white-space: nowrap;
+      text-transform: capitalize;
+    }
+  }
+  .nav-justified, .nav-tabs.nav-justified{
+    margin-bottom: 0px;
+  }
+  .nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #3097D1;
+  }
+  .current-month{
+    background-color:yellow;
+  }
+  .calendar{
+    width:100%;
+
+  }
+  .help-block{
+    text-transform: lowercase;
+
+    &:first-letter{
+      text-transform: uppercase;
+    }
+  }
+  .new-reservations
+  {
+    background: yellow;
+    border-radius: 82px;
+    padding-left: 9px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: #333;
+  }
+  .form-control{
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccd0d2;
+    border-radius: 4px;
+    box-shadow: none!important;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+  label.col-md-4.control-label {
+    padding-top: 7px;
+  }
+
+}
